@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> اختبار قصير في بطاقة الأسبوع السادس</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        .quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .options {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .submit-btn {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 60px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .correct p {
+            color: green;
+        }
+        .incorrect p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1> اختبار قصير في بطاقة الأسبوع السادس</h1>
+
+        <!-- السؤال الأول -->
+        <div class="question" id="q1-container">
+            <p>1. ما العنصر الأساسي الذي يُستخدم لتحديد موضع جسم ما؟</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="c"> السرعة .</label>
+                <label><input type="radio" name="q1" value="b"> الكتلة .</label>
+               	<label><input type="radio" name="q1" value="a">  نقطة الإسناد .</label>			
+							
+            </div>
+        </div>
+		
+        <!-- السؤال الثاني -->
+        <div class="question" id="q2-container">
+            <p>2. أي العبارات التالية صحيحة بخصوص تأثير القوة على الأجسام؟</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> تؤدي القوة إلى تحريك الأجسام فقط.</label>
+                <label><input type="radio" name="q2" value="b"> يمكن للقوة تغيير موضع الجسم أو شكله.</label>
+                <label><input type="radio" name="q2" value="c">  لا تؤثر القوة على سرعة الجسم.</label>
+            </div>
+        </div>
+
+        <!-- السؤال الثالث -->
+        <div class="question" id="q3-container">
+            <p>3. لماذا يصعب غلق الباب عند دفعه من جهة المفصلات؟ </p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> لأن نقطة التأثير في المركز .</label>
+                <label><input type="radio" name="q3" value="b"> لأن الباب ثقيل جدًا .</label>
+                <label><input type="radio" name="q3" value="c">  لأن القوة تكون غير فعالة عند هذه النقطة .</label>
+            </div>
+        </div>
+
+
+        <!-- السؤال الرابع -->
+        <div class="question" id="q4-container">
+            <p>4. إذا تحرك جسم بسرعة ثابتة في مسار دائري، فهل تتغير سرعته؟ ولماذا؟</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> نعم، لأن الاتجاه يتغير دائمًا .</label>
+                <label><input type="radio" name="q4" value="b">  لا، لأنه لا يوجد تأثير خارجي.</label>
+                <label><input type="radio" name="q4" value="c">  لا، لأنها ثابتة.</label>
+            </div>
+        </div>
+
+        <!-- السؤال الخامس -->
+        <div class="question" id="q5-container">
+            <p>5. إذا كان لدينا ميزان نابضي وعلقنا به جسمًا، ثم استخدمنا المصعد للصعود بسرعة ثابتة، فكيف يتأثر قياس الميزان؟ </p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> يزداد .</label>
+                <label><input type="radio" name="q5" value="b"> ينقص .</label>
+                <label><input type="radio" name="q5" value="c"> يبقى كما هو  .</label>
+            </div>
+        </div>
+		<!-- السؤال السادس -->
+        <div class="question" id="q6-container">
+            <p>6. في مسابقة جري، إذا تجاوزت الشخص في المركز الثاني، فما هو مركزك الآن؟  </p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="b">  الأول.</label>
+				<label><input type="radio" name="q6" value="a"> الثاني .</label>
+                <label><input type="radio" name="q6" value="c">  الثالث.</label>
+            </div>
+        </div>
+		
+				<!-- السؤال السابع -->
+        <div class="question" id="q7-container">
+            <p>7. رأى أحمد سيارة تقف عند إشارة المرور، لكنه لاحظ أنها في نفس اللحظة تتحرك! كيف يكون ذلك؟</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="b">  السيارة تتحرك بسرعة بطيئة جدًا.</label>
+				<label><input type="radio" name="q7" value="a">   السيارة تتحرك بسبب الرياح.</label>
+                <label><input type="radio" name="q7" value="c">  السيارة تتحرك بالنسبة لراكب داخلها، لكنها ساكنة بالنسبة للشارع.</label>
+            </div>
+        </div>
+
+				<!-- السؤال الثامن -->
+        <div class="question" id="q8-container">
+            <p>8. أي من هذه الحركات لا يمكن رؤيتها بالعين المجردة؟ </p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="b"> حركة عقارب الساعة .</label>
+				<label><input type="radio" name="q8" value="a"> حركة الأرض حول الشمس .</label>
+                <label><input type="radio" name="q8" value="c"> حركة سيارة على الطريق .</label>
+            </div>
+        </div>
+		
+				<!-- السؤال التاسع -->
+        <div class="question" id="q9-container">
+            <p>9.عندما تؤثر قوة متساوية على جسمين مختلفي الكتلة، أي العبارات التالية صحيحة؟ </p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="b">  الجسم ذو الكتلة الأقل سيتحرك بتسارع أكبر.</label>
+				<label><input type="radio" name="q9" value="a"> الجسم ذو الكتلة الأكبر سيتحرك بتسارع أكبر.</label>
+                <label><input type="radio" name="q9" value="c"> كلا الجسمين سيتحركان بنفس التسارع.</label>
+            </div>
+        </div>
+				<!-- السؤال العاشر -->
+        <div class="question" id="q10-container">
+            <p>10. إذا أثرت قوة مقدارها 10 نيوتن على جسمين مختلفين، أحدهما كتلته 2 كجم والآخر كتلته 5 كجم، فأي العبارات التالية صحيحة؟ </p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="b"> كلا الجسمين سيكتسبان نفس التسارع .</label>
+				<label><input type="radio" name="q10" value="a"> الجسم الذي كتلته 2 كجم سيكتسب تسارعًا أكبر من الجسم الذي كتلته 5 كجم .</label>
+                <label><input type="radio" name="q10" value="c">  الجسم الذي كتلته 5 كجم سيكتسب تسارعًا أكبر من الجسم الذي كتلته 2 كجم .</label>
+            </div>
+        </div>
+		
+        <button class="submit-btn" onclick="calculateResult()">إرسال الإجابات</button>
+        <div class="result" id="result"></div>
+    </div>
+	
+
+    <script>
+        function calculateResult() {
+            const answers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'c',
+                q4: 'a',
+                q5: 'c',
+				q6: 'a',
+				q7: 'c',
+				q8: 'a',
+				q9: 'b',
+				q10:'a',
+            };
+
+            let score = 0;
+
+            for (let question in answers) {
+                const container = document.getElementById(`${question}-container`);
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+
+                if (userAnswer) {
+                    if (userAnswer.value === answers[question]) {
+                        score++;
+                        container.classList.add('correct');
+                        container.classList.remove('incorrect');
+                    } else {
+                        container.classList.add('incorrect');
+                        container.classList.remove('correct');
+                    }
+                } else {
+                    container.classList.remove('correct');
+                    container.classList.add('incorrect');
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = `لقد أجبت على : ${score} من 10 أسئلة`;
+        }
+    </script>
+</body>
+</html>
